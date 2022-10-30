@@ -8,7 +8,6 @@ import javax.persistence.ManyToOne;
 
 @Entity
 @Data
-@SuperBuilder
 public class Purchased extends BaseEntity{
     @ManyToOne
     private Student student;

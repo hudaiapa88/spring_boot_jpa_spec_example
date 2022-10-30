@@ -8,7 +8,6 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@SuperBuilder
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name="Role",
         discriminatorType = DiscriminatorType.STRING)

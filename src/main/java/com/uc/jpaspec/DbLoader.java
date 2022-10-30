@@ -14,7 +14,7 @@ import java.util.List;
 @Transactional
 @Component
 @RequiredArgsConstructor
-public class DbLoader implements CommandLineRunner {
+public class DbLoader /*implements CommandLineRunner {
 
     private final CategoryRepository categoryRepository;
     private final CourseRepository courseRepository;
@@ -108,3 +108,6 @@ public class DbLoader implements CommandLineRunner {
     }
 
 }
+*/
+
+{}

@@ -9,7 +9,6 @@ import javax.persistence.Entity;
 
 @Entity
 @Data
-@SuperBuilder
 @DiscriminatorValue(value = Role.Value.STUDENT)
 public class Student extends User{
 
