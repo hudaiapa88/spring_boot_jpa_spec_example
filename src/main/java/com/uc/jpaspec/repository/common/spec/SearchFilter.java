@@ -33,16 +33,16 @@ public class SearchFilter {
                 return SearchFilter.builder().field(getField(fieldAndValue[0])).joinColumnName(getColumn(fieldAndValue[0])).operator(operator.get()).value(fieldAndValue[1]).build();
             }
         } else {
-            new RuntimeException("");
+            new RuntimeException("Operator not found");
         }
         return null;
 
     }
     protected static String getColumn(String value){
-        return value.contains(".") ?  value.split(".")[0] : null;
+        return value.contains(".") ?  value.split("\\.")[0] : null;
     }
     protected static String getField(String value){
-        return value.contains(".") ? value.split(".")[1] : value;
+        return value.contains(".") ? value.split("\\.")[1] : value;
     }
 
 

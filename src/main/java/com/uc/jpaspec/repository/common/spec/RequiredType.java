@@ -12,6 +12,9 @@ public class RequiredType {
         } else if(Enum.class.isAssignableFrom(fieldType)) {
             return Enum.valueOf(fieldType, value);
         }
+        else if(fieldType.isAssignableFrom(String.class)) {
+            return String.valueOf(value);
+        }
         return null;
     }
 
